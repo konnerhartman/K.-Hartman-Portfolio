@@ -10,4 +10,4 @@ DESCRIPTION:
 
     SCREENCAPTURE: 
 
-        ![Alt text](assets/images/Portfolio-Screencapture.png)
+        ![plot](assets/images/Portfolio-Screencapture.png)
