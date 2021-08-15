@@ -4,6 +4,10 @@
     font-family: Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
+body {
+    background-color: rgb(35,49,66);
+}
+
 h1 {
     font-size: 65px;
 }
@@ -24,10 +28,33 @@ h2 {
     justify-content: center;
     margin-top: 50px;
 }
+a {
+    color: rgb(230,76,76);
+    text-decoration: none;
+}
+
+.links a:hover  {
+    color: beige;
+    background-color: rgb(230,76,76);
+  }
+
+article img:hover {
+    border-radius: 10px;
+    box-shadow: 0px 0px 50px rgb(230,76,76);
+}
+  
 
 header {
     display: flex;
     justify-content: space-between;
+    background-color: rgb(27,75,74);
+    padding: 25px;
+}
+
+
+.intro img {
+    border-radius: 30px;
+    height: 500px;
 }
 
 .intro {
@@ -37,8 +64,9 @@ header {
 }
 
 .intro p {
-    width: 500px;
-    height: auto
+    max-width: 500px;
+    height: auto;
+    color: beige;
 }
 
 section {
@@ -52,10 +80,16 @@ section p {
     justify-content: center;
     margin: 30px 0px 15px;
     font-size: 20px;
+    color: beige;
+}
+
+article img {
+    border-radius: 10px;
 }
 
 section ul li {
     display: inline-block;
+    color: rgb(230,76,76);
 }
 
 footer {
