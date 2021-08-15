@@ -1,3 +1,9 @@
+:root {
+    --text: beige;
+    --links: rgb(230,76,76);
+    --head-foot: rgb(27,75,74);
+}
+
 * {
     border: 0;
     margin: 0;
@@ -8,8 +14,28 @@ body {
     background-color: rgb(35,49,66);
 }
 
+h2 {
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    color: var(--text);
+    text-decoration: underline;
+}
+a {
+    color: var(--links);
+    text-decoration: none;
+}
+
+.links a:hover  {
+    color: var(--text);
+    background-color: var(--links);
+  }
+
+/* Nav Bar */
 h1 {
     font-size: 65px;
+    color: var(--text);
 }
 
 ul {
@@ -17,44 +43,27 @@ ul {
 }
 
 ul li {
-    display: inline-block;
+    display: inline-flex;
     margin: 25px;
     font-size: 20px;
 }
 
-h2 {
-    font-size: 30px;
-    display: flex;
-    justify-content: center;
-    margin-top: 50px;
-}
-a {
-    color: rgb(230,76,76);
-    text-decoration: none;
-}
-
-.links a:hover  {
-    color: beige;
-    background-color: rgb(230,76,76);
-  }
-
-article img:hover {
-    border-radius: 10px;
-    box-shadow: 0px 0px 50px rgb(230,76,76);
-}
-  
-
 header {
     display: flex;
     justify-content: space-between;
-    background-color: rgb(27,75,74);
+    background-color: var(--head-foot);
     padding: 25px;
 }
 
+/* About Me Section */
+img {
+    height: auto;
+    max-width: 100%;
+}
 
 .intro img {
     border-radius: 30px;
-    height: 500px;
+    width: 400px;
 }
 
 .intro {
@@ -63,13 +72,18 @@ header {
     align-items: center;
 }
 
+p {
+    color: var(--text);
+}
+
 .intro p {
     max-width: 500px;
     height: auto;
-    color: beige;
 }
 
-section {
+ /* My Procjects Section */
+section {    
+    color: var(--text);
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -80,19 +94,65 @@ section p {
     justify-content: center;
     margin: 30px 0px 15px;
     font-size: 20px;
-    color: beige;
 }
 
 article img {
     border-radius: 10px;
 }
 
-section ul li {
-    display: inline-block;
-    color: rgb(230,76,76);
+article img:hover {
+    border-radius: 10px;
+    box-shadow: 0px 0px 50px var(--links);
 }
 
+/* Reach Out Section */
+.bottom {
+    background-color: var(--head-foot);
+}
+
+section ul li {
+    display: inline-block;
+    color: var(--links);
+}
+
+/* Footer Style */
 footer {
     display: flex;
     justify-content: center;
+    background-color: var(--head-foot);
+}
+
+footer p {
+    color: black;
+}
+
+/* Small Smartphones */
+@media screen and (max-width: 675px) {
+    header,
+    nav,
+    h1  {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 30px;
+        padding-bottom: 0px;
+    }
+
+    nav ul li {
+        display: flex;
+        flex-direction: column;
+    }
+
+    section {
+        margin: 10px;
+    }
+
+    .bottom {
+        margin: 0px;
+    }
+
+    section ul li {
+        display: flex;
+        flex-direction: column;
+    }    
 }
