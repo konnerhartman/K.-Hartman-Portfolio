@@ -10,4 +10,4 @@ DESCRIPTION:
 
     SCREENCAPTURE: 
 
-        (./assets/images/Portfolio-Screencapture.png)
+        ![Alt text](assets/images/Portfolio-Screencapture.png)
