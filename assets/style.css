@@ -130,17 +130,18 @@ footer p {
 @media screen and (max-width: 675px) {
     header,
     nav,
-    h1  {
+    h2  {
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        padding-left: 30px;
-        padding-bottom: 0px;
+        align-items: center;
+        /* padding-left: 30px;
+        padding-bottom: 0px; */
     }
 
     nav ul li {
         display: flex;
         flex-direction: column;
+        align-items: flex-start;
     }
 
     section {
@@ -154,5 +155,6 @@ footer p {
     section ul li {
         display: flex;
         flex-direction: column;
+        align-items: center;
     }    
 }
