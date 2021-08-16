@@ -101,7 +101,6 @@ article img {
 }
 
 article img:hover {
-    border-radius: 10px;
     box-shadow: 0px 0px 50px var(--links);
 }
 
