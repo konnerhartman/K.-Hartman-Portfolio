@@ -9,5 +9,5 @@ DESCRIPTION:
         https://konnerhartman.github.io/K.-Hartman-Portfolio/
 
     SCREENCAPTURE: 
-(assets/images/Portfolio-Screencapture.png)        
-![ScreenShot](/Users/konnerhartman/code/K.-Hartman-Portfolio/assets/images/Portfolio-Screencapture.png)
+        
+![ScreenShot](assets/images/Portfolio-Screencapture.png)
