@@ -5,98 +5,195 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio :: K. Hartmnan</title>
-    <link rel="stylesheet" href="./assets/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="./assets/style.css"> -->
 </head>
-<body>
+<body class="bg-dark text-white">
 
     <!-- Header and Nav Bar -->
-    <header>
-        <h1>Portfolio</h1>
-        <nav>
-            <ul class="links">
-                <li>
-                    <a href="#about">About Me</a>
+    <nav class="shadow-lg rounded navbar sticky-top navbar-expand-lg navbar-dark bg-secondary py-2 ">
+        <a class="navbar-brand mx-3" href="#">
+            
+            <h2><img width="40px" src="assets/images/KH-LOGO copy.png"> Portfolio</h2>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-3 ms-auto">
+                <li class="nav-item active">
+                    <a id="abtMeBtn" class="nav-link active" href="#about">About Me</a>
                 </li>
-                <li>
-                    <a href="#projects">My Projects</a>
+                <li  class="nav-item">
+                    <a id="myWorkBtn" class="nav-link active" href="#projects">My Work</a>
                 </li>
-                <li>
-                    <a href="#contact">Contact Me</a>
+                <li class="nav-item">
+                    <a id="reachMeBtn" class="nav-link active" href="#contact">Reach Out</a>
                 </li>
             </ul>
-        </nav>
-    </header>
+        </div>
+    </nav>
+
     <main>
-
         <!-- About Me Section -->
-        <h2 id="about">About Me</h2>
-        <section class="intro">
-            <img src="./assets/images/profile-pic.jpeg" alt="Konner standing with Half Dome in the background.">
-            <p>
-                Hey there! Thanks for swing by to learn a little about me. I'll start off with an introduction. My name is Konner Hartman. Currently, I'm enrolled in a full stack coding bootcamp! I'm fairly new to the world of coding, but I'm already having so much fun! I have experience with website design through sites like Squarespace and I am quickly gaining experience in building my own sites from ground up using HTML, CSS, and JavaScript!
-            </p>
-        </section>
+        
+        <div class="container">
+            <div class="row">
+                <section class="intro col-lg-4">
+                    <img class="d-sm-none d-md-block" height="700px" src="./assets/images/IMG_6895-cutout.png" alt="Konner standing with Half Dome in the background.">
+                </section>
 
+                <section class="col-lg-8">
+                    <div id="mainLogo">
+                        <div class="my-5 mx-5 px-5 text-center">
+                            <p>Hey there! Thanks for stopping by my portfolio! Click any of the links in the navigation bar above to learn a little about me</p>
+                        </div>
+                        <img class="img-fluid d-block my-5" alt="Responsive image"  height="300px" src="./assets/images/KH-LOGO copy.png" alt="">
+                    </div>
+                    <div class="accordion my-5 d-none shadow-lg" id="accordionExample">
+                        <div class="card">
+                          <div class="card-header bg-dark" id="headingOne">
+                            <h2 class="mb-0">
+                              <button class="btn btn-link collapsed text-white text-decoration-none" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                My Past
+                              </button>
+                            </h2>
+                          </div>
+                      
+                          <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                            <div class="card-body bg-secondary">
+                                <p>Building is my passion. As a child, I would lock myself away in my bedroom, spending endless hours creating anything and everything with legos. The older I became, the more I gained the trust of my father with power tools… because believe it or not, power tools can pose danger in the hands of a pre-teen. The power tools allowed me to create and transpire my love for creating through the medium of wood. I can vividly remember the days my dad took me on construction sites where I assisted with house add-ons, building decks, awnings, etc. The building went beyond that. We spent countless hours in his workshop, music blasting, garage door open — creating.</p>
+
+                                <p>Outside of the garage, my time was spent outdoors; working outside, riding motorcycles and skateboarding. My most vivid memory was, of course, relevant to building. My parents bought a new water heater, and I immediately became an astronaut with the card box it came in. The box became a spaceship and I became the first man on the moon!</p>
+                                 
+                                <p>Letting my creativity run wild was my passion. Whether it was woodwork, art, or spending time outdoors — I was determined to build, to create, to make everything out of something!<p>                            
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="card">
+                          <div class="card-header bg-dark" id="headingTwo">
+                            <h2 class="mb-0">
+                              <button class="btn btn-link collapsed text-white text-decoration-none" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                My Present
+                              </button>
+                            </h2>
+                          </div>
+
+                          <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                            <div class="card-body bg-secondary">
+                                <p>I’m currently a Senior Zoologist at the Dallas Zoo. I know what you’re thinking, “What a cool job!” And you’re right — it is! And while this opportunity is phenomenal and has offered me experiences that most wouldn’t get in a lifetime, I have decided to make a career change. My passion for creativity and building runs deep, and with great eager, I am transitioning into web design.</p>
+
+                                <p>While working full-time at the zoo, I am a full stack coding bootcamp student at Southern Methodist University in Dallas, Tx.</p>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="card">
+                          <div class="card-header bg-dark" id="headingThree">
+                            <h2 class="mb-0">
+                              <button class="btn btn-link collapsed text-white text-decoration-none" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                My Future
+                              </button>
+                            </h2>
+                          </div>
+
+                          <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                            <div class="card-body bg-secondary">
+                                <p>My aspirations for my future are forever changing as life progresses. But one thing I do know is that I will be a successful web developer! As I did research into this completely new occupational field, I was always leaning toward back-end development, although I haven’t gotten too deep into that yet. I have tons of fun with front end design, so I may try my hand at free-lance as a side hustle.</p>
+
+                                <p>Thanks for making it this far! Check out some of my projects.</p>
+                                
+                                <p>Click <a class="text-light" href="#contact">here</a> to find out where you can reach me at.</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                </section>
+            </div>
+        </div>
+        <br>
         <!-- My Projects Section -->
-        <h2 id="projects">My Projects</h2>
-        <section class="sites">
-            <!-- Horiseon Refactoring -->
-            <article>
-                <p>
-                    Refactoring Code
-                </p>
-                <a target="_blank" href="https://konnerhartman.github.io/horiseon-refactor/">
-                    <img src="./assets/images/horiseon-refactor.png" alt="Screen capture of link.">
-                </a>
-            </article>
+        <div id="myWork" class="container d-none">
+            <h2 id="projects">My Projects</h2>
+                <section class="sites">
+                    <div class="row">
+                        <!-- Horiseon Refactoring -->
+                        <article class="col-lg-6">
+                            <p>
+                                Refactoring Code
+                            </p>
+                            <a target="_blank" href="https://konnerhartman.github.io/horiseon-refactor/">
+                                <img class="shadow p-3 mb-5 bg-secondary rounded" src="./assets/images/horiseon-refactor.png" alt="Screen capture of link.">
+                            </a>
+                        </article>
 
-            <!-- Website Design -->
-            <article>
-                <p>
-                    Website Design
-                </p>
-                <a target="_blank" href="https://www.perilousoutdoors.com/">
-                    <img src="./assets/images/perilousoutdoors.png" alt="Screen capture of link.">
-                </a>
-            </article>
+                        <!-- Website Design -->
+                        <article class="col-lg-6">
+                            <p>
+                                Website Design
+                            </p>
+                            <a target="_blank" href="https://www.perilousoutdoors.com/">
+                                <img class="shadow p-3 mb-5 bg-secondary rounded" src="./assets/images/perilousoutdoors.png" alt="Screen capture of link.">
+                            </a>
+                        </article>
+                    </div>
 
-            <!-- GitHub Link -->
-            <article>
-                <p>
-                    GitHub Links
-                </p>
-                <a target="_blank" href="https://github.com/konnerhartman?tab=repositories">
-                    <img src="./assets/images/github-konnerhartman.png" alt="Screen capture of link.">
-                </a>
-            </article>
+                    <div class="row">
+                    <!-- GitHub Link -->
+                        <article class="col-lg-6">
+                            <p>
+                                GitHub Links
+                            </p>
+                            <a target="_blank" href="https://github.com/konnerhartman?tab=repositories">
+                                <img class="shadow p-3 mb-5 bg-secondary rounded" src="./assets/images/github-konnerhartman.png" alt="Screen capture of link.">
+                            </a>
+                        </article class="col-lg-6">
 
-            <!-- Google Portfolio -->
-            <article>
-                <p>
-                    Other Interests
-                </p>
-                <a target="_blank" href="https://drive.google.com/drive/folders/1UuTff7HrEOknrHOJARi-pUAUP2q-LWWB?usp=sharing">
-                    <img src="./assets/images/google-drive.png" alt="Screen capture of link.">
-                </a>
-            </article>
-        </section>
+                        <!-- Google Portfolio -->
+                        <article class="col-lg-6">
+                            <p>
+                                Other Interests
+                            </p>
+                            <a target="_blank" href="https://drive.google.com/drive/folders/1UuTff7HrEOknrHOJARi-pUAUP2q-LWWB?usp=sharing">
+                                <img class="shadow p-3 mb-5 bg-secondary rounded" src="./assets/images/google-drive.png" alt="Screen capture of link.">
+                            </a>
+                        </article>
+                    </div>
+                </section>
+            </div>
+        </div>
 
         <!-- Contact Me Section -->
-        <h2 class="bottom" id="contact">Reach out</h2>
-        <section class="bottom">
-            <ul class="links">
-                <li> <a target="_blank" href="https://www.linkedin.com/in/konner-hartman/">LinkedIn</a></li>
-                <li> <a target="_blank" href="https://github.com/konnerhartman">GitHub</a></li>
-                <li>Phone: (214) 226-4278</li>
-                <li>Email: konner.hartman@yahoo.com</li>
-            </ul>
-        </section>
+        <div id="reachMe" class="container d-none">
+            <h2 class="bottom" id="contact">Reach out</h2>
+            <div class="row">
+                <div class="col-lg-3">
+                    <a target="_blank" href="https://www.linkedin.com/in/konner-hartman/">LinkedIn</a>
+                </div>
+                <div class="col-lg-3">
+                    <a target="_blank" href="https://github.com/konnerhartman">GitHub</a>
+                </div>
+                <div class="col-lg-3">
+                    Phone: (214) 226-4278
+                </div>
+                <div class="col-lg-3">
+                    Email: konner.hartman@yahoo.com
+                </div>
+            </div>
+        </div>
     </main>
 
     <!-- Footer w/ Links  -->
-    <footer>
-        <p>Made by Konner Hartman</p>
+    <footer class="text-center">
+        <p>Designed by Konner Hartman</p>
     </footer>
+
+    <script src="./assets/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/2a07effbf4.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
