@@ -2,15 +2,23 @@
 
 DESCRIPTION: 
 
-    I recently updated this code to showcase an updated portfolio. While doing this, I utilized the CSS framework, Bootstrap. JavaScript was also incorporated to apply functionality. 
+    I recently updated this code to showcase an updated portfolio. While doing this I utilized the CSS framework, BootStrap, FontAwesome for the icons, and JavaScript for the functionality. 
 
-    Issues that I ran into while updating this were BootStrap blocking specific styling features I wanted to add, JavaScript fucntions not working as I desired. 
+    Issues that I ran into while updating this were BootStrap  blocking specific styling features I wanted to add and JavaScript functions not working as I desired. I was able to find ways to work around these issues while staying within BootStrap and JavaScript. Bootstrap documentation was heavily referenced.
 
-    LINK TO WEBPAGE:
+    This portfolio will continue to be updated with new features, as it is one I will continue to use in my professional career. 
 
-        https://konnerhartman.github.io/K.-Hartman-Portfolio/
+RESOURCES:
+    https://getbootstrap.com/
+    https://fontawesome.com/
+    https://www.w3schools.com/
+    https://stackoverflow.com
 
-    SCREENCAPTURE: 
+LINK TO WEBPAGE:
+
+    https://konnerhartman.github.io/K.-Hartman-Portfolio/
+
+SCREENCAPTURE: 
     Previous design    
 ![ScreenShot](assets/images/Portfolio-Screencapture.png)
     Current design
