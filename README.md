@@ -1,4 +1,4 @@
-## K.-Hartman-Portfolio
+# K.-Hartman-Portfolio
 
 ## DESCRIPTION
 I recently updated this code to showcase an updated portfolio. While doing this I utilized the CSS framework, BootStrap, FontAwesome for the icons, and JavaScript for the functionality. 
