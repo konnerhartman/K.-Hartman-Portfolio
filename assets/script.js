@@ -24,7 +24,7 @@ function showReachMe() {
     reachMe.classList.remove("d-none")
     aboutMe.classList.add("d-none")
     myWork.classList.add("d-none")
-    mainLogo.classList.remove("d-none")
+    mainLogo.classList.add("d-none")
 };
 
 abtMeBtn.addEventListener("click", showAbtMe);
