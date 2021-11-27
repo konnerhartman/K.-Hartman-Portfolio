@@ -31,8 +31,8 @@ https://konnerhartman.github.io/K.-Hartman-Portfolio/
 ## SCREENCAPTURE
 Previous design    
 ![ScreenShot](assets/images/Portfolio-Screencapture.png)
-Current design
-![ScreenShot](assets/images/Current-Portfolio.png)
+![ScreenShot](assets/images/Second-Portfolio.png)
+![Gif](assets/images/Current-Portfolio.gif)
 
 ## QUESTIONS
 For any questions, you can reach me at:
